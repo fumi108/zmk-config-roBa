@@ -40,6 +40,11 @@
             bindings = <&kp EQUAL>;
             key-positions = <24 25>;
         };
+
+        Layer6 {
+            bindings = <&to 6>;
+            key-positions = <34 35>;
+        };
     };
 
     macros {

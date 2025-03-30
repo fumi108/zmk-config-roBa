@@ -70,7 +70,7 @@
 &kp Q             &kp W         &kp E         &kp R                             &kp T                                                          &kp Y        &kp U  &lt 6 I    &kp O    &kp P
 &kp B             &kp S         &kp D         &kp F                             &kp G        &kp LS(LG(S))                  &kp MINUS          &kp H        &kp J  &kp K      &kp L    &kp SEMICOLON
 &mt LEFT_SHIFT Z  &kp X         &kp C         &kp V                             &kp B        &kp LEFT_BRACKET               &kp RIGHT_BRACKET  &kp N        &kp M  &kp COMMA  &kp DOT  &mt RIGHT_SHIFT SLASH
-&kp LCTRL         &kp LEFT_WIN  &kp LEFT_ALT  &lt_to_layer_0 2 INTERNATIONAL_8  &lt 0 SPACE  &lt_to_layer_0 2 INT_KANA      &kp BACKSPACE      &lt 3 ENTER                             &kp UNDERSCORE
+&kp LCTRL         &kp LEFT_WIN  &kp LEFT_ALT  &lt_to_layer_0 3 INTERNATIONAL_8  &lt 1 SPACE  &lt_to_layer_0 2 INT_KANA      &kp BACKSPACE      &lt 2 ENTER                             &kp UNDERSCORE
             >;
 
             sensor-bindings = <&inc_dec_kp LC(LEFT) LC(RIGHT)>;
@@ -78,10 +78,10 @@
 
         SYMBOL {
             bindings = <
-&kp EXCLAMATION  &kp DOUBLE_QUOTES  &kp HASH  &kp DOLLAR  &kp PERCENT                      &kp AMPERSAND  &kp SQT  &trans  &trans  &trans
-&trans           &trans             &trans    &trans      &trans       &trans      &trans  &trans         &trans   &trans  &trans  &trans
-&trans           &trans             &trans    &trans      &trans       &trans      &trans  &trans         &trans   &trans  &trans  &trans
-&trans           &trans             &trans    &trans      &trans       &trans      &trans  &trans                                  &trans
+&kp EXCLAMATION  &kp DOUBLE_QUOTES  &kp HASH  &kp DOLLAR  &kp PERCENT                             &kp AMPERSAND  &kp SQT      &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp EQUAL
+&trans           &trans             &trans    &trans      &trans       &trans      &kp BACKSLASH  &kp PIPE       &kp AT_SIGN  &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp COLON
+&trans           &trans             &trans    &trans      &trans       &trans      &trans         &trans         &trans       &trans                &trans                 &trans
+&trans           &trans             &trans    &trans      &trans       &trans      &trans         &trans                                                                   &trans
             >;
         };
 

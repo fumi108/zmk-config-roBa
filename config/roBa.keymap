@@ -83,9 +83,9 @@
         default_layer {
             bindings = <
 &kp Q             &kp W     &kp E     &kp R                       &kp T                                                       &kp Y                &kp U  &kp I      &kp O    &kp P
-&kp A             &kp S     &kp D     &kp F                       &kp G        &tog 2                      &kp MINUS          &kp H                &kp J  &kp K      &kp L    &kp SEMICOLON
+&kp A             &kp S     &kp D     &kp F                       &kp G        &kp COMMA                   &kp MINUS          &kp H                &kp J  &kp K      &kp L    &kp SEMICOLON
 &mt LEFT_SHIFT Z  &kp X     &kp C     &kp V                       &kp B        &kp LEFT_BRACKET            &kp RIGHT_BRACKET  &kp N                &kp M  &kp COMMA  &kp DOT  &mt RIGHT_SHIFT SLASH
-&kp LCTRL         &kp LALT  &kp LGUI  &lt_to_layer_0 1 LS(LANG2)  &lt 2 SPACE  &lt_to_layer_0 3 LANG1      &kp BACKSPACE      &mt RIGHT_WIN ENTER                             &mt RIGHT_CONTROL UNDER
+&kp LCTRL         &kp LALT  &kp LGUI  &lt_to_layer_0 1 LS(LANG2)  &lt 2 SPACE  &lt_to_layer_0 3 LANG1      &kp BACKSPACE      &mt RIGHT_WIN ENTER                             &mt RIGHT_CONTROL BACKSLASH
             >;
 
             sensor-bindings = <&inc_dec_kp LC(LEFT) LC(RIGHT)>;
@@ -95,26 +95,26 @@
             bindings = <
 &kp EXCLAMATION  &kp DOUBLE_QUOTES  &kp HASH  &kp DOLLAR  &kp PERCENT                                 &kp AMPERSAND  &kp SQT      &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp EQUAL
 &trans           &trans             &trans    &trans      &trans       &trans          &kp BACKSLASH  &kp PIPE       &kp AT_SIGN  &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp PLUS
-&trans           &trans             &trans    &trans      &trans       &bt BT_CLR      &kp ESCAPE     &trans         &mkp MB1     &mkp MB2              &trans                 &kp ASTERISK
+&trans           &trans             &trans    &trans      &trans       &kp ESCAPE      &kp ESCAPE     &trans         &mkp MB1     &mkp MB2              &trans                 &kp ASTERISK
 &trans           &trans             &trans    &trans      &trans       &trans          &trans         &trans                                                                   &kp MINUS
             >;
         };
 
         ARROW {
             bindings = <
-&kp ESCAPE            &trans                &trans        &trans        &trans                        &kp LC(LEFT_ARROW)      &trans          &kp LC(UP_ARROW)  &kp LC(RIGHT_ARROW)      &trans
-&kp C_BRI_DN          &kp C_BRI_UP          &kp C_VOL_DN  &kp C_VOL_UP  &trans  &tog 0      &kp HOME  &kp LEFT_ARROW          &kp DOWN_ARROW  &kp UP_ARROW      &kp RIGHT_ARROW          &kp END
-&kp LG(LS(NUMBER_3))  &kp LS(LG(NUMBER_4))  &trans        &trans        &trans  &trans      &trans    &kp LS(LC(LEFT_ARROW))  &mkp MB1        &mkp MB2          &kp LS(LC(RIGHT_ARROW))  &trans
-&trans                &trans                &trans        &trans        &trans  &trans      &trans    &trans                                                                             &trans
+&kp ESCAPE            &trans                &trans        &trans        &trans                              &kp LC(LEFT_ARROW)      &trans          &kp LC(UP_ARROW)  &kp LC(RIGHT_ARROW)      &trans
+&kp C_BRI_DN          &kp C_BRI_UP          &kp C_VOL_DN  &kp C_VOL_UP  &trans  &tog 0          &kp HOME    &kp LEFT_ARROW          &kp DOWN_ARROW  &kp UP_ARROW      &kp RIGHT_ARROW          &kp END
+&kp LG(LS(NUMBER_3))  &kp LS(LG(NUMBER_4))  &trans        &trans        &trans  &kp ESCAPE      &kp ESCAPE  &kp LS(LC(LEFT_ARROW))  &mkp MB1        &mkp MB2          &kp LS(LC(RIGHT_ARROW))  &trans
+&trans                &trans                &trans        &trans        &trans  &trans          &trans      &trans                                                                             &trans
             >;
         };
 
         FUNCTION_NUMBER {
             bindings = <
-&kp ESCAPE  &kp F7  &kp F8  &kp F9  &kp F10                      &trans      &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp ASTERISK
-&trans      &kp F4  &kp F5  &kp F6  &kp F11  &trans      &trans  &kp PERIOD  &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp MINUS
-&trans      &kp F1  &kp F2  &kp F3  &kp F12  &trans      &trans  &kp N0      &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp PLUS
-&trans      &trans  &trans  &trans  &trans   &trans      &trans  &trans                                                &kp ENTER
+&kp ESCAPE  &kp F7  &kp F8  &kp F9  &kp F10                              &trans      &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp ASTERISK
+&trans      &kp F4  &kp F5  &kp F6  &kp F11  &trans          &trans      &kp PERIOD  &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp MINUS
+&trans      &kp F1  &kp F2  &kp F3  &kp F12  &kp ESCAPE      &kp ESCAPE  &kp N0      &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp PLUS
+&trans      &trans  &trans  &trans  &trans   &trans          &trans      &trans                                                &kp ENTER
             >;
         };
 
